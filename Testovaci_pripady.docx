@@ -1,0 +1,304 @@
+Seznam testovacích případů:
+
+Funkce hlavni_menu:
+TC01: Výběr platné možnosti z menu po spuštění programu, volba čísla 1
+TC02: Výběr platné možnosti z menu po spuštění programu, volba čísla 2
+TC03: Výběr platné možnosti z menu po spuštění programu, volba čísla 3
+TC04: Výběr platné možnosti z menu po spuštění programu, volba čísla 4
+TC05: Výběr neplatné možnosti z menu, prázdný vstup
+TC06: Výběr neplatné možnosti z menu, číslo mimo nabízený rozsah
+TC07: Výběr neplatné možnosti z menu, textový řetězec (str)
+TC08: Výběr neplatné možnosti z menu, zadání záporného čísla
+TC09: Výběr neplatné možnosti z menu, zadání nuly
+
+Funkce pridat_ukol:
+TC10: Zadání názvu a popisu úkolu s diakritikou
+TC11: Zadání názvu a popisu úkolu obsahující číslo v názvu a popisu
+TC12: Zadání názvu a popisu úkolu s příliš dlouhým názvem
+TC13: Zadání názvu a popisu úkolu s prázdným vstupem
+TC14: Zadání druhého úkolu, jeho názvu a popisu
+
+Funkce odstranit_ukoly:
+TC15: Výběr platné možnosti pro odstranění úkolů, volba čísla úkolu ze seznamu
+TC16: Výběr neplatné možnosti pro odstranění úkolů, volba čísla mimo seznam úkolu
+TC17: Výběr neplatné možnosti pro odstranění úkolů, prázdný vstup
+TC18: Výběr neplatné možnosti pro odstranění úkolů, textový řetězec (str)
+TC19: Výběr neplatné možnosti pro odstranění úkolů, zadání záporného čísla
+TC20: Výběr neplatné možnosti pro odstranění úkolů, zadání nuly
+
+Funkce zobrazit_ukoly:
+TC21: Zobrazení seznamu úkolů, když je seznam prázdný
+TC22: Zobrazení seznamu úkolů, když seznam obsahuje jeden úkol
+TC23: Zobrazení seznamu úkolů, když seznam obsahuje více úkolů
+TC24: Zobrazení seznamu úkolů, po odstranění úkolu
+TC25: Zobrazení seznamu úkolů, po odstranění všech úkolů
+
+Funkce hlavni_menu:
+TC26: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 1
+TC27: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 2
+TC28: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 3
+TC29: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 4
+ 
+Testovací případy
+
+TC01: Výběr platné možnosti z menu po spuštění programu, volba čísla 1
+•	Popis: Ověření, že volba čísla 1 v hlavním menu správně spustí funkci pridat_ukol().
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Zadejte číslo 1 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program spustí funkci pridat_ukol().
+•	Skutečný výsledek: Funkce pridat_ukol() byla spuštěna a program zobrazil výzvu k zadání nového úkolu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+
+TC02: Výběr platné možnosti z menu po spuštění programu, volba čísla 2
+•	Popis: Ověření, že volba čísla 2 v hlavním menu správně spustí funkci zobrazit_ukoly().
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Zadejte číslo 2 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že je seznam úkolů prázdný.
+•	Skutečný výsledek: Funkce zobrazit_ukoly() byla spuštěna a program zobrazil hlášku „Seznam úkolů je prázdný“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+ 
+TC03: Výběr platné možnosti z menu po spuštění programu, volba čísla 3
+•	Popis: Ověření, že volba čísla 3 v hlavním menu správně spustí funkci odstranit_ukol().
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb ("1 - Přidat úkol", "2 – Zobrazit úkoly", "3. Odstranit úkol", "4. Konec programu"). 3. Zadejte číslo 3 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že je seznam úkolů prázdný.
+•	Skutečný výsledek: Funkce odstranit_ukol() byla spuštěna a program zobrazil hlášku „Seznam úkolů je prázdný“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+
+TC04: Výběr platné možnosti z menu po spuštění programu, volba čísla 4
+•	Popis: Ověření, že volba čísla 4 ukončí program.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb ("1 - Přidat úkol", "2 – Zobrazit úkoly", "3. Odstranit úkol", "4. Konec programu"). 3. Zadejte číslo 4 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program se ukončí.
+•	Skutečný výsledek: Program se ukončil.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+ 
+TC05: Výběr neplatné možnosti z menu, prázdný vstup
+•	Popis: Ověření, že volba prázdný vstup v hlavním menu upozorní uživatele o chybě.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Nechte volbu nevyplněnou (prázdný vstup) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program upozorní uživatele o chybě a nechá ho opakovat volbu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a možnost programu řešit výjimky.
+
+TC06: Výběr neplatné možnosti z menu, číslo mimo nabízený rozsah
+•	Popis: Ověření, že volba čísla v hlavním menu, které je mimo nabízený rozsah, upozorní uživatele o chybě.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Zadejte číslo 5 nebo vyšší a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program upozorní uživatele o chybě a nechá ho opakovat volbu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a možnost programu řešit výjimky.
+ 
+TC07: Výběr neplatné možnosti z menu, textový řetězec (str)
+•	Popis: Ověření, že volba textového řetězce v hlavním menu upozorní uživatele o chybě.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Místo čísla zadejte textový řetězec (např. „volba“) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program upozorní uživatele o chybě a nechá ho opakovat volbu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a možnost programu řešit výjimky.
+
+TC08: Výběr neplatné možnosti z menu, zadání záporného čísla
+•	Popis: Ověření, že volba záporného čísla v hlavním menu upozorní uživatele o chybě.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Zadejte číslo „-1“ a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program upozorní uživatele o chybě a nechá ho opakovat volbu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a možnost programu řešit výjimky.
+ 
+TC09: Výběr neplatné možnosti z menu, zadání nuly
+•	Popis: Ověření, že volba čísla 0 v hlavním menu upozorní uživatele o chybě.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 3. Zadejte číslo 0 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program upozorní uživatele o chybě a nechá ho opakovat volbu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a možnost programu řešit výjimky.
+
+TC10: Zadání názvu a popisu úkolu s diakritikou
+•	Popis: Ověření, že zadání názvu a popisu úkolu s diakritikou ve funkci pridat_ukol() funguje správně.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Zadejte volbu z hlavního menu číslo 1 pro funkci „Přidat úkol“ a potvrďte stisknutím klávesy Enter. 3. Zadejte název úkolu s diakritikou (např. „Přikrýt bábovku“) a potvrďte stisknutím klávesy Enter. 4. Zadejte popis úkolu s diakritikou (např. „Je potřeba přikrýt bábovku utěrkou.“) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program vyzve uživatele k zadání názvu úkolu. Dále vyzve k zadání popisu úkolu. Dále zobrazí hlášku „Úkol ‘Přikrýt bábovku’ byl přidán.” a nakonec zobrazí hlavní menu.
+•	Skutečný výsledek: Program vyzval uživatele k zadání názvu úkolu, vyzval k zadání popisu úkolu, zobrazil hlášku „Úkol ‘Přikrýt bábovku’ byl přidán.” a zobrazil hlavní menu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro správné přidání úkolu do seznamu úkolů.
+ 
+TC11: Zadání názvu a popisu úkolu obsahující číslo v názvu a popisu
+•	Popis: Ověření, že zadání názvu a popisu úkolu, které obsahují číslo v názvu a popisu, ve funkci pridat_ukol() funguje správně.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Zadejte volbu z hlavního menu číslo 1 pro funkci „Přidat úkol“ a potvrďte stisknutím klávesy Enter. 3. Zadejte název úkolu obsahující číslo (např. „Úkol č. 1“) a potvrďte stisknutím klávesy Enter. 4. Zadejte popis úkolu obsahující číslo (např. „Popis úkolu č. 1“) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program vyzve uživatele k zadání názvu úkolu. Dále vyzve k zadání popisu úkolu. Dále zobrazí hlášku „Úkol ‘Úkol č. 1’ byl přidán.” a nakonec zobrazí hlavní menu.
+•	Skutečný výsledek: Program vyzval uživatele k zadání názvu úkolu, vyzval k zadání popisu úkolu, zobrazil hlášku „Úkol ‘Úkol č. 1’ byl přidán.” a zobrazil hlavní menu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro správné přidání úkolu do seznamu úkolů.
+
+TC12: Zadání názvu a popisu úkolu s příliš dlouhým vstupem
+•	Popis: Ověření, že zadání názvu a popisu úkolu s dlouhým vstupem ve funkci pridat_ukol() funguje správně.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Zadejte volbu z hlavního menu číslo 1 pro funkci „Přidat úkol“ a potvrďte stisknutím klávesy Enter. 3. Zadejte název úkolu s dlouhým vstupem (Např. textový řetězec s 50 znaky) a potvrďte stisknutím klávesy Enter. 4. Zadejte popis úkolu s dlouhým vstupem (Např. textový řetězec s 50 znaky) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program vyzve uživatele k zadání názvu úkolu. Dále vyzve k zadání popisu úkolu. Dále zobrazí hlášku, že úkol s daným názvem byl přidán, a nakonec zobrazí hlavní menu.
+•	Skutečný výsledek: Program vyzval uživatele k zadání názvu úkolu, vyzval k zadání popisu úkolu, zobrazil hlášku, že úkol s daným názvem byl přidán a zobrazil hlavní menu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro správné přidání úkolu do seznamu úkolů.
+
+TC13: Zadání názvu a popisu úkolu s prázdným vstupem
+•	Popis: Ověření, že zadání názvu a popisu úkolu s prázdným vstupem ve funkci pridat_ukol() upozorní uživatele o chybě.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Zadejte volbu z hlavního menu číslo 1 pro funkci „Přidat úkol“ a potvrďte stisknutím klávesy Enter. 3. Nechte volbu pro zadání názvu úkolu nevyplněnou (prázdný vstup) a potvrďte stisknutím klávesy Enter. 4. Nechte volbu pro zadání popisu úkolu nevyplněnou (prázdný vstup) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program vyzve uživatele k zadání názvu úkolu. Po zadání prázdného vstupu upozorní, že uživatel zadal neplatný vstup a nechá uživatele volbu opakovat dokut nezadá platný vstup. Dále vyzve k zadání popisu úkolu. Po zadání prázdného vstupu upozorní, že uživatel zadal neplatný vstup a nechá uživatele volbu opakovat dokut nezadá platný vstup. Nakonec zobrazí hlavní menu.
+•	Skutečný výsledek: Výsledek splněn podle očekávaného scénáře.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro správné přidání úkolu do seznamu úkolů a možnost programu řešit výjimky.
+
+TC14: Vložení druhého úkolu, jeho názvu a popisu
+•	Popis: Ověření, že přidání druhého úkolu, zadání jeho názvu a popisu ve funkci pridat_ukol() funguje správně.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání prvního úkolu z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 1 pro funkci „Přidat úkol“ a potvrďte stisknutím klávesy Enter. 4. Zadejte název úkolu (např. „Úkol č. 2“) a potvrďte stisknutím klávesy Enter. 4. Zadejte popis úkolu obsahující číslo (např. „Popis úkolu č. 2“) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program vyzve uživatele k zadání názvu úkolu. Dále vyzve k zadání popisu úkolu. Dále zobrazí hlášku „Úkol ‘Úkol č. 2’ byl přidán.” a nakonec zobrazí hlavní menu.
+•	Skutečný výsledek: Program vyzval uživatele k zadání názvu úkolu, vyzval k zadání popisu úkolu, zobrazil hlášku „Úkol ‘Úkol č. 2’ byl přidán.” a zobrazil hlavní menu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro správné přidání více úkolů do seznamu úkolů.
+
+TC15: Výběr platné možnosti pro odstranění úkolů, volba čísla úkolu ze seznamu
+•	Popis: Ověření, že volba odstranění úkolu ze seznamu úkolů správně odstraní vybraný úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání úkolů z TC14.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC14. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Zadejte volbu číslo 1 pro odstranění prvního úkolu a potvrďte stisknutím klávesy Enter. 5. Zadejte volbu z hlavního menu číslo 2 pro zobrazení seznamu úkolů a potvrďte stisknutím klávesy Enter. 6. Zkontrolujte, že vybraný úkol byl smazán.
+•	Očekávaný výsledek: Program odstraní vybraný úkol. 
+•	Skutečný výsledek: Program odstranil vybraný úkol.  
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro odstranění vybraného úkolu ze seznamu úkolů.
+
+TC16: Výběr neplatné možnosti pro odstranění úkolů, volba čísla mimo seznam úkolu
+•	Popis: Ověření, že při volbě čísla úkolu pro odstranění úkolu, které není v seznamu úkolů, program ohlásí chybu.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání úkolů z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Zadejte volbu čísla pro odstranění úkolu, které není v seznamu úkolů (např. číslo 5) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že vybraný úkol není v seznamu úkolů a nechá uživatele opakovat volbu znovu. 
+•	Skutečný výsledek: Program zobrazil hlášku „Úkol číslo '5' neexistuje. Opakujte volbu znovu.“ a nechal uživatele opakovat volbu znovu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje výjimky při používání funkce pro odstranění vybraného úkolu ze seznamu úkolů.
+
+TC17: Výběr neplatné možnosti pro odstranění úkolů, prázdný vstup
+•	Popis: Ověření, že pří zadání prázdného vstupu během volby čísla úkolu pro odstranění úkolu, program ohlásí chybu.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání úkolů z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Místo volby čísla pro odstranění úkolu zadejte jen prázdný vstup a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že jde o neplatnou volbu a nechá uživatele opakovat volbu znovu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“ a nechal uživatele opakovat volbu znovu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje výjimky při používání funkce pro odstranění vybraného úkolu ze seznamu úkolů.
+
+TC18: Výběr neplatné možnosti pro odstranění úkolů, textový řetězec (str)
+•	Popis: Ověření, že při zadání textového řetězce místo čísla během volby čísla úkolu pro odstranění úkolu, program ohlásí chybu.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání úkolů z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Místo volby čísla pro odstranění úkolu zadejte textový řetězec (např. „úkol“) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že jde o neplatnou volbu a nechá uživatele opakovat volbu znovu.
+•	Skutečný výsledek: Program zobrazil hlášku „Neplatná volba! Opakujte volbu znovu.“ a nechal uživatele opakovat volbu znovu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje výjimky při používání funkce pro odstranění vybraného úkolu ze seznamu úkolů.
+
+TC19: Výběr neplatné možnosti pro odstranění úkolů, zadání záporného čísla
+•	Popis: Ověření, že při zadání záporného čísla během volby čísla úkolu pro odstranění úkolu, program ohlásí chybu.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání úkolů z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Při volbě čísla pro odstranění úkolu zadejte záporné číslo (např. „-1“) a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že jde o neplatnou volbu a nechá uživatele opakovat volbu znovu.
+•	Skutečný výsledek: Program nezobrazil chybovou hlášku a rovnou nechal uživatele opakovat volbu znovu.
+•	Stav: Fail
+•	Poznámky: Tento případ je důležitý, protože ověřuje výjimky při používání funkce pro odstranění vybraného úkolu ze seznamu úkolů.
+
+TC20: Výběr neplatné možnosti pro odstranění úkolů, zadání nuly
+•	Popis: Ověření, že při zadání nuly během volby čísla úkolu pro odstranění úkolu, program ohlásí chybu.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro přidání úkolů z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Při volbě čísla pro odstranění úkolu zadejte nulu a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program zobrazí hlášku, že jde o neplatnou volbu a nechá uživatele opakovat volbu znovu.
+•	Skutečný výsledek: Program zobrazil hlášku „Návrat do hlavního menu.“ a zobrazil hlavní menu.
+•	Stav: Fail. Přesto jde o užitečnou volbu, která slouží o opuštění funkce odstranit_ukol(), když uživatel zjistí, že žádný úkol odstranit nechce. Bylo by dobré tuto funkci ponechat a uživatele s touto funkcí seznámit. 
+•	Poznámky: Tento případ je důležitý, protože ověřuje výjimky při používání funkce pro odstranění vybraného úkolu ze seznamu úkolů.
+
+TC21: Zobrazení seznamu úkolů, když je seznam prázdný
+•	Popis: Ověření, že volba zobrazení seznamu úkolů v hlavním menu správně upozorní uživatele, v případě, když je seznam prázdný.
+•	Vstupní podmínky: Program zobrazuje hlavní menu.
+•	Kroky testu: 1. Spusťte program. 2. Zadejte volbu z hlavního menu číslo 2 pro zobrazení seznamu úkolů a potvrďte stisknutím klávesy Enter. 4. Zkontrolujte, že program zobrazil chybovou hlášku.
+•	Očekávaný výsledek: Program zobrazí hlášku, že je seznam úkolů prázdný.
+•	Skutečný výsledek: Funkce zobrazit_ukoly() byla spuštěna a program zobrazil hlášku „Seznam úkolů je prázdný“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro zobrazení seznamu úkolů.
+
+TC22: Zobrazení seznamu úkolů, když seznam obsahuje jeden úkol
+•	Popis: Ověření, že volba zobrazení seznamu úkolů v hlavním menu správně zobrazí seznam úkolů, v případě, když seznam obsahuje jeden úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro zadání prvního úkolu z TC11.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC11. 3. Zadejte volbu z hlavního menu číslo 2 pro zobrazení seznamu úkolů a potvrďte stisknutím klávesy Enter. 4. Zkontrolujte, že seznam úkolů se zobrazil.
+•	Očekávaný výsledek: Program zobrazí seznam úkolů, v seznamu je jeden úkol s odpovídajícím názvem a popisem podle TC11: „1. Úkol č. 1 – Popis úkolu č. 1.“.
+•	Skutečný výsledek: Funkce zobrazit_ukoly() byla spuštěna a program zobrazil seznam úkolů, kde byl obsažen jeden úkol dle očekávání.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro zobrazení seznamu úkolů.
+
+TC23: Zobrazení seznamu úkolů, když seznam obsahuje více úkolů
+•	Popis: Ověření, že volba zobrazení seznamu úkolů v hlavním menu správně zobrazí seznam úkolů, v případě, když seznam obsahuje více úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro zadání úkolů z TC14.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC14. 3. Zadejte volbu z hlavního menu číslo 2 pro zobrazení seznamu úkolů a potvrďte stisknutím klávesy Enter. 4. Zkontrolujte, že seznam úkolů se zobrazil.
+•	Očekávaný výsledek: Program zobrazí seznam úkolů, v seznamu jsou dva úkoly s odpovídajícími názvy a popisem podle TC14: „1. Úkol č. 1 – Popis úkolu č. 1. 2. Úkol č. 2 - Popis úkolu č. 2.“
+•	Skutečný výsledek: Funkce zobrazit_ukoly() byla spuštěna a program zobrazil seznam úkolů, kde byly obsaženy dva úkoly dle očekávání.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro zobrazení seznamu úkolů.
+
+TC24: Zobrazení seznamu úkolů, po odstranění úkolu
+•	Popis: Ověření, že volba zobrazení seznamu úkolů v hlavním menu správně zobrazí seznam úkolů, poté co dojde k odstranění jednoho úkolu.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky pro zadání úkolů a následné odstranění jednoho z úkolů z TC15.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC15. 3. Zadejte volbu z hlavního menu číslo 2 pro zobrazení seznamu úkolů a potvrďte stisknutím klávesy Enter. 4. Zkontrolujte, že seznam úkolů se zobrazil. 
+•	Očekávaný výsledek: Program zobrazí seznam úkolů, v seznamu jsou dva úkoly. Po odstranění jednoho z úkolů a zadání volby „Zobrazit všechny úkoly“ program zobrazí jeden zbývající úkol. 
+•	Skutečný výsledek: Funkce zobrazit_ukoly() byla spuštěna a program zobrazil seznam úkolů se dvěma úkoly. Po odstranění jednoho z úkolů a opakováním volby „Zobrazit všechny úkoly“ program zobrazil jeden zbývající úkol. 
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro zobrazení seznamu úkolů.
+ 
+TC25: Zobrazení seznamu úkolů, po odstranění všech úkolů
+•	Popis: Ověření, že volba zobrazení seznamu úkolů v hlavním menu oznámí uživateli, že seznam úkolů je prázdný, poté co dojde k odstranění všech úkolů.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. Provést kroky z TC24.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC24. 3. Zadejte volbu z hlavního menu číslo 3 k odstranění úkolu a potvrďte stisknutím klávesy Enter. 4. Zadejte volbu číslo 1 pro odstranění posledního úkolu a potvrďte stisknutím klávesy Enter. 5. Zadejte volbu z hlavního menu číslo 2 pro zobrazení seznamu úkolů a potvrďte stisknutím klávesy Enter. 6. Zkontrolujte, že program zobrazí hlášku, že seznam úkolů je prázdný.
+•	Očekávaný výsledek: Po provedení všech předepsaných kroků program zobrazí hlášku „Seznam úkolů je prázdný“. 
+•	Skutečný výsledek: Program zobrazil hlášku „Seznam úkolů je prázdný“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní funkci pro zobrazení seznamu úkolů.
+
+TC26: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 1
+•	Popis: Ověření, že volba čísla 1 v hlavním menu správně spustí funkci pridat_ukol() i poté, když je v seznamu úkolů uložený nejméně jeden úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. V seznamu úkolů je už uložený nejméně jeden úkol.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC10. 3. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 4. Zadejte číslo 1 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program spustí funkci pridat_ukol().
+•	Skutečný výsledek: Funkce pridat_ukol() byla spuštěna a program zobrazil výzvu k zadání nového úkolu.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+
+TC27: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 2
+•	Popis: Ověření, že volba čísla 2 v hlavním menu správně spustí funkci zobrazit_ukoly() i poté, když je v seznamu úkolů uložený nejméně jeden úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. V seznamu úkolů je už uložený nejméně jeden úkol.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC10. 3. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb (např. "1 - Přidat úkol", "2 - Zobrazit úkoly" atd.). 4. Zadejte číslo 2 a potvrďte stisknutím klávesy Enter. 5. Zkontrolujte, že program zobrazil seznam úkolů.
+•	Očekávaný výsledek: Program spustí funkci zobrazit_ukoly() a zobrazí seznam úkolů.
+•	Skutečný výsledek: Funkce zobrazit_ukoly() byla spuštěna a program zobrazil seznam úkolů.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+
+TC28: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 3
+•	Popis: Ověření, že volba čísla 3 v hlavním menu správně spustí funkci odstranit_ukol() i poté, když je v seznamu úkolů uložený nejméně jeden úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. V seznamu úkolů je už uložený nejméně jeden úkol.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC10. 3. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb ("1 - Přidat úkol", "2 – Zobrazit úkoly", "3. Odstranit úkol", "4. Konec programu"). 4. Zadejte číslo 3 a potvrďte stisknutím klávesy Enter. 5. Zkontrolujte, že program zobrazil seznam úkolů a vyzval uživatele k výběru úkolu pro smazání.
+•	Očekávaný výsledek: Program spustí funkci odstranit_ukol(), zobrazí seznam úkolů a vyzve uživatele k výběru úkolu pro smazání.
+•	Skutečný výsledek: Funkce odstranit_ukol() byla spuštěna, program zobrazil seznam úkolů a vyzval uživatele: „Zadejte číslo úkolu, který chcete odstranit“.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+
+TC29: Výběr platné možnosti z menu, s uloženými úkoly v seznamu, volba čísla 4
+•	Popis: Ověření, že volba čísla 4 ukončí program i poté, když je v seznamu úkolů uložený nejméně jeden úkol.
+•	Vstupní podmínky: Program zobrazuje hlavní menu. V seznamu úkolů je už uložený nejméně jeden úkol.
+•	Kroky testu: 1. Spusťte program. 2. Proveďte kroky z testu TC10. 3. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb ("1 - Přidat úkol", "2 – Zobrazit úkoly", "3. Odstranit úkol", "4. Konec programu"). 4. Zadejte číslo 4 a potvrďte stisknutím klávesy Enter.
+•	Očekávaný výsledek: Program se ukončí.
+•	Skutečný výsledek: Program se ukončil.
+•	Stav: Pass
+•	Poznámky: Tento případ je důležitý, protože ověřuje základní navigaci z hlavního menu a funkčnost jedné z klíčových funkcí programu.
+
